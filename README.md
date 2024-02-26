@@ -1,5 +1,43 @@
 # WebApponAWS
 WebApp on AWS
+// Open Powershell 
+// Docker Desktop is in running condition
+
+// Clone Repo
+```
+git clone https://github.com/atulkamble/WebAppOnAWS.git
+cd WebAppOnAWS
+ls
+```
+// log into docker hub
+```
+docker login
+```
+// navigate to project 
+```
+docker build -t wildfly .
+```
+
+// listing for running image
+```
+docker images
+```
+
+// run image 
+```
+docker run -d -p 8080:80 wildfly
+```
+// crosscheck for log 
+```
+docker logs 2a6ba8af25a639c433c9a86fddceed874d127790a3f0c3d972f34a32d0bd2e61
+```
+
+// list container using 
+```
+docker container ls
+```
+// install apache maven 
+mvn clean install -DskipTests
 
 
 ---
